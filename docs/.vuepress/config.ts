@@ -2,7 +2,7 @@ import { localTheme } from './theme'
 import { defineUserConfig } from '@vuepress/cli'
 
 export default defineUserConfig({
-    base: '/fansMedalHelperVersion/',
+    base: '/',
     lang: "zh-CN",
     title: "B站粉丝牌助手文档",
     description: "B站粉丝牌助手文档",

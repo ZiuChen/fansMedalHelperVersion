@@ -1,16 +1,24 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@vue/devtools-api': ^6.1.4
   '@vuepress/cli': 2.0.0-beta.46
   '@vuepress/client': 2.0.0-beta.46
   '@vuepress/core': 2.0.0-beta.46
+  '@vuepress/shared': 2.0.0-alpha.1
   '@vuepress/theme-default': 2.0.0-beta.46
   '@vuepress/utils': 2.0.0-beta.46
+  '@vueuse/core': ^8.5.0
   vue: ^3.2.36
+  vue-router: ^4.0.15
   vuepress: 2.0.0-beta.46
   vuepress-plugin-pixi-live2d-display: ^1.0.1
 
 dependencies:
+  '@vue/devtools-api': 6.1.4
+  '@vuepress/shared': 2.0.0-alpha.1
+  '@vueuse/core': 8.5.0_vue@3.2.36
+  vue-router: 4.0.15_vue@3.2.36
   vuepress-plugin-pixi-live2d-display: 1.0.1
 
 devDependencies:
@@ -152,7 +160,6 @@ packages:
 
   /@vue/devtools-api/6.1.4:
     resolution: {integrity: sha512-IiA0SvDrJEgXvVxjNkHPFfDx6SXw0b/TUkqMcDZWNg9fnCAHbTpoo59YfJ9QLFkwa3raau5vSlRVzMSLDnfdtQ==}
-    dev: true
 
   /@vue/reactivity-transform/3.2.36:
     resolution: {integrity: sha512-Jk5o2BhpODC9XTA7o4EL8hSJ4JyrFWErLtClG3NH8wDS7ri9jBDWxI7/549T7JY9uilKsaNM+4pJASLj5dtRwA==}
@@ -197,7 +204,6 @@ packages:
 
   /@vue/shared/3.2.36:
     resolution: {integrity: sha512-JtB41wXl7Au3+Nl3gD16Cfpj7k/6aCroZ6BbOiCMFCMvrOpkg/qQUXTso2XowaNqBbnkuGHurLAqkLBxNGc1hQ==}
-    dev: true
 
   /@vuepress/bundler-vite/2.0.0-beta.46:
     resolution: {integrity: sha512-lS0DKLiWzPHRVLOEViExKrApEYX661LsDf/lNFu5du1iqmNSNi3BvZbXUHnupzM8h02uOSa/VP6jzawWINqkYg==}
@@ -391,6 +397,12 @@ packages:
       - supports-color
     dev: true
 
+  /@vuepress/shared/2.0.0-alpha.1:
+    resolution: {integrity: sha512-W0tLKLV9R3GDzT2LjXbyOpM8tgPNbhmzHJA4JlrifRsxzmugxlxbn24lL6G0mWd21ZJ2wj5tgRA8k7NCJ9jGVQ==}
+    dependencies:
+      '@vue/shared': 3.2.36
+    dev: false
+
   /@vuepress/shared/2.0.0-beta.46:
     resolution: {integrity: sha512-iqunwXZR3ea+36Cyz1QVP6F49CVhNxcYZFFxpSOi5Z5j9S4qiZm+fL931w8XHz70qpgwmfBFUOZBGqsMMLVuRg==}
     dependencies:
@@ -460,11 +472,9 @@ packages:
       '@vueuse/shared': 8.5.0_vue@3.2.36
       vue: 3.2.36
       vue-demi: 0.12.5_vue@3.2.36
-    dev: true
 
   /@vueuse/metadata/8.5.0:
     resolution: {integrity: sha512-WxsD+Cd+bn+HcjpY6Dl9FJ8ywTRTT9pTwk3bCQpzEhXVYAyNczKDSahk50fCfIJKeWHhyI4B2+/ZEOxQAkUr0g==}
-    dev: true
 
   /@vueuse/shared/8.5.0_vue@3.2.36:
     resolution: {integrity: sha512-qKG+SZb44VvGD4dU5cQ63z4JE2Yk39hQUecR0a9sEdJA01cx+XrxAvFKJfPooxwoiqalAVw/ktWK6xbyc/jS3g==}
@@ -479,7 +489,6 @@ packages:
     dependencies:
       vue: 3.2.36
       vue-demi: 0.12.5_vue@3.2.36
-    dev: true
 
   /ansi-regex/5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==}
@@ -1538,7 +1547,6 @@ packages:
         optional: true
     dependencies:
       vue: 3.2.36
-    dev: true
 
   /vue-router/4.0.15_vue@3.2.36:
     resolution: {integrity: sha512-xa+pIN9ZqORdIW1MkN2+d9Ui2pCM1b/UMgwYUCZOiFYHAvz/slKKBDha8DLrh5aCG/RibtrpyhKjKOZ85tYyWg==}
@@ -1547,7 +1555,6 @@ packages:
     dependencies:
       '@vue/devtools-api': 6.1.4
       vue: 3.2.36
-    dev: true
 
   /vue/3.2.36:
     resolution: {integrity: sha512-5yTXmrE6gW8IQgttzHW5bfBiFA6mx35ZXHjGLDmKYzW6MMmYvCwuKybANRepwkMYeXw2v1buGg3/lPICY5YlZw==}
